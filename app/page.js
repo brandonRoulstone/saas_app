@@ -1,9 +1,9 @@
-
+import Landing_page from "./home/page";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-     <h1>Hello world</h1>
+    <main className="flex min-h-screen flex-col min-w-[100%] items-center justify-center p-0 bg-slate-100">
+     <Landing_page />
     </main>
   );
 }
