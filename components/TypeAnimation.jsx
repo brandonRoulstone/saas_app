@@ -16,7 +16,7 @@ const TypeAnimationUi = () => {
       ]}
       wrapper="span"
       speed={50}
-      style={{ display: 'inline-block', color: 'white' }}
+      style={{ display: 'inline-block', color: 'black' }}
       repeat={Infinity}
     />
   );
