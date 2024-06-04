@@ -29,7 +29,7 @@ const Landing_page = () => {
 
           <TypeAnimationUi className="text-[.5rem] w-[100%] text-black"/>
 
-          <h1 className="text-xl bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-blue-700 bg-clip-text text-transparent font-semibold sm:text-5xl">Create your own ideas.</h1>
+          <h1 className="text-xl bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-blue-700 bg-clip-text text-transparent font-semibold sm:text-7xl">Create your own ideas.</h1>
 
           <div className='flex flex-col gap-4 pt-4 p-2 sm:flex-row sm:w-[100%]'>
 
