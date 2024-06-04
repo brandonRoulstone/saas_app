@@ -12,9 +12,9 @@ const NavigationBar = () => {
 
   return (
     <>
-        <div className="navbar bg-base-100 fixed top-0 z-50">
+        <div className="navbar bg-zinc-50 fixed top-0 z-50">
             <div className="flex-none">
-                <label className="btn btn-circle swap swap-rotate">
+                <label className="btn bg-transparent border-none btn-circle swap swap-rotate hover:bg-slate-200">
 
                     {/* this hidden checkbox controls the state */}
                     { open !== true ? (
@@ -32,7 +32,7 @@ const NavigationBar = () => {
             </div>
 
             <div className="flex-1 px-6">
-                <Link href="/" className="text-xl text-blue-500 font-semibold flex">W R <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" class="size-6 mx-1">
+                <Link href="/" className="text-xl text-blue-500 font-semibold flex">W R <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mx-1">
                 <path strokeLinecap="round" strokeLineJoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
                 </svg>
                 T I F Y Y . . .</Link>
@@ -68,10 +68,10 @@ const NavigationBar = () => {
         </div>
 
         { open === true ? (
-                <div className="translate-nav bg-base-100 h-[100vh] w-72 fixed top-18 flex justify-center items-center ease-linear transition-all" id="navbar">
-                    <ul className="flex justify-evenly flex-col gap-10 list-none text-xl font-semibold">
+                <div className="translate-nav bg-zinc-50 h-[100vh] w-72 fixed top-18 flex justify-center items-center ease-linear transition-all" id="navbar">
+                    <ul className="flex justify-evenly flex-col list-none text-xl font-semibold">
 
-                        <div className="h-[50vh] flex flex-col absolute top-[5rem] left-2 gap-11 border border-t-0 border-l-0 border-r-0 px-20 border-b-blue-700">
+                        <div className="h-[100vh] flex flex-col justify-center min-w-[100%] items-center top-[5rem] gap-11 text-zinc-700">
 
                             <li><Link href="/">Home</Link></li>
 
@@ -95,4 +95,4 @@ const NavigationBar = () => {
   )
 }
 
-export default NavigationBar
+export default NavigationBar;

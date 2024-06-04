@@ -18,6 +18,7 @@ const TypeAnimationUi = () => {
       speed={50}
       style={{ display: 'inline-block', color: 'black' }}
       repeat={Infinity}
+      className="text-[1.2rem] w-[100%] text-black sm:text-3xl"
     />
   );
 };

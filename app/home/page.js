@@ -21,21 +21,25 @@ const Landing_page = () => {
   }
 
   return (
-    <div className="min-h-[100vh] flex justify-center items-center bg-zinc-100 w-[100%] overflow-hidden">
+    <div className="min-h-[100vh] flex justify-center items-center bg-gradient-to-bl from-blue-100 to-rose-50 w-[100%] overflow-hidden px-2">
 
       <div className="flex w-[100%] flex-col min-h-screen justify-center items-center gap-20 sm:flex-row">
 
         <div className='flex flex-col'>
 
-          <TypeAnimationUi className="text-[.5rem] w-[100%] text-black"/>
+          <TypeAnimationUi />
 
-          <h1 className="text-xl bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-blue-700 bg-clip-text text-transparent font-semibold sm:text-7xl">Create your own ideas.</h1>
 
-          <div className='flex flex-col gap-4 pt-4 p-2 sm:flex-row sm:w-[100%]'>
+          <h1 className="text-4xl bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-blue-700 bg-clip-text text-transparent font-semibold sm:text-7xl sm:my-4">Create your own ideas.</h1>
 
-            <button onClick={() => navigate('/login')} className='btn sm:w-[50%] bg-blue-600 w-[100%] text-white hover:bg-blue-700'>Login</button>
+          <div className='flex flex-row w-[32%] md:gap-4 gap-2 pt-4 p-2 sm:flex-row sm:w-[100%] sm:px-7 md:px-0'>
 
-            <button onClick={() => navigate('/register')} className='btn sm:w-[50%] border border-blue-500 w-[100%] text-blue-500 hover:border-blue-600 hover:text-blue-600 bg-transparent hover:bg-transparent'>Register</button>
+            <button onClick={() => navigate('/login')} className='btn sm:w-[33%] bg-gradient-to-r from-indigo-200 to-sky-300 border-none w-[100%] text-white hover:bg-blue-700'>Login</button>
+
+            <button onClick={() => navigate('/register')} className='btn sm:w-[34%] border border-blue-500 w-[100%] text-blue-500 hover:border-blue-600 hover:text-blue-600 bg-transparent hover:bg-transparent'>Register</button>
+
+            <button onClick={() => navigate('/')} className='btn sm:w-[33%] bg-gradient-to-r from-sky-300 to-indigo-200 border-none w-[100%] text-white hover:bg-blue-700'>Get Started</button>
+
               
           </div>
 
