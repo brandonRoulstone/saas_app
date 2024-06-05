@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import "https://cdn.jsdelivr.net/npm/bulma@1.0.0/css/bulma-rtl.min.css";
 
 
 .translate-nav{
@@ -16,4 +17,15 @@
     left: 0%;
   }
 }
+
+.borde-r{
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+}
+
+::-webkit-scrollbar{
+  display: none;
+}
+
+
 

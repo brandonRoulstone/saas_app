@@ -17,25 +17,25 @@ const NavigationBar = () => {
                 <label className="btn bg-transparent border-none btn-circle swap swap-rotate hover:bg-slate-200">
 
                     {/* this hidden checkbox controls the state */}
-                    
+
                     { open !== true ? (
                         <input type="checkbox" onClick={() => handleShow(true)} />
                     ) : (
                         <input type="checkbox" onClick={() => handleShow(false)} />
                     )}
                     
-                    <svg className="swap-off fill-blue-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
+                    <svg className="swap-off fill-blue-500 z-50" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><path d="M64,384H448V341.33H64Zm0-106.67H448V234.67H64ZM64,128v42.67H448V128Z"/></svg>
                     
                     {/* close icon */}
-                    <svg className="swap-on fill-blue-500" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
+                    <svg className="swap-on fill-blue-500 z-50" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 512 512"><polygon points="400 145.49 366.51 112 256 222.51 145.49 112 112 145.49 222.51 256 112 366.51 145.49 400 256 289.49 366.51 400 400 366.51 289.49 256 400 145.49"/></svg>
                 
                 </label>                
             </div>
 
-            <div className="flex-1 px-6">
+            <div className="flex-1 px-6 z-50">
                 <Link href="/" className="text-xl text-blue-500 font-semibold flex">
                     W R 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6 mx-1">
                     <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
                     </svg>
                     T I F Y Y . . .
@@ -72,7 +72,7 @@ const NavigationBar = () => {
         </div>
 
         { open === true ? (
-                <div className="translate-nav bg-zinc-50 h-[100vh] w-72 fixed top-18 flex justify-center items-center ease-linear transition-all" id="navbar">
+                <div className="translate-nav bg-zinc-50 h-[100vh] w-72 fixed top-18 flex justify-center items-center ease-linear transition-all z-10" id="navbar">
                     <ul className="flex justify-evenly flex-col list-none text-xl font-semibold">
 
                         <div className="h-[100vh] flex flex-col justify-center min-w-[100%] items-center top-[5rem] gap-11 text-zinc-700">

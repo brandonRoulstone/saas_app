@@ -5,6 +5,7 @@ import TypeAnimationUi from '@/components/TypeAnimation';
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 import ChatBoxUi from '@/components/ChatBoxUi';
+import InfiniteCarousel from '@/components/AnimatedComponents/InfiniteCarousel';
 
 const Landing_page = () => {
   const [boxOpen, setBoxOpen] = useState(false);
@@ -29,7 +30,6 @@ const Landing_page = () => {
 
           <TypeAnimationUi />
 
-
           <h1 className="text-4xl bg-gradient-to-r from-cyan-500 via-fuchsia-500 to-blue-700 bg-clip-text text-transparent font-semibold sm:text-7xl sm:my-4">Create your own ideas.</h1>
 
           <div className='flex flex-row w-[32%] md:gap-4 gap-2 pt-4 p-2 sm:flex-row sm:w-[100%] sm:px-7 md:px-0'>
@@ -40,10 +40,15 @@ const Landing_page = () => {
 
             <button onClick={() => navigate('/')} className='btn sm:w-[33%] bg-gradient-to-r from-sky-300 to-indigo-200 border-none w-[100%] text-white hover:bg-blue-700'>Get Started</button>
 
-              
+          </div>
+          
+          <div className='flex justify-center'>
+            <InfiniteCarousel />
           </div>
 
+
         </div>
+
 
       </div>
         
