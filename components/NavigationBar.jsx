@@ -17,6 +17,7 @@ const NavigationBar = () => {
                 <label className="btn bg-transparent border-none btn-circle swap swap-rotate hover:bg-slate-200">
 
                     {/* this hidden checkbox controls the state */}
+                    
                     { open !== true ? (
                         <input type="checkbox" onClick={() => handleShow(true)} />
                     ) : (
@@ -32,10 +33,13 @@ const NavigationBar = () => {
             </div>
 
             <div className="flex-1 px-6">
-                <Link href="/" className="text-xl text-blue-500 font-semibold flex">W R <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="size-6 mx-1">
-                <path strokeLinecap="round" strokeLineJoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
-                </svg>
-                T I F Y Y . . .</Link>
+                <Link href="/" className="text-xl text-blue-500 font-semibold flex">
+                    W R 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="size-6">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.042A8.967 8.967 0 0 0 6 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 0 1 6 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 0 1 6-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0 0 18 18a8.967 8.967 0 0 0-6 2.292m0-14.25v14.25" />
+                    </svg>
+                    T I F Y Y . . .
+                </Link>
             </div>
 
             <div className="flex-none">
@@ -44,7 +48,7 @@ const NavigationBar = () => {
 
                     <div tabIndex={0} role="button" className="btn btn-ghost btn-circle avatar">
                         <div className="w-10 rounded-full">
-                            <Image alt="Tailwind CSS Navbar component" src="https://cdn-images.imagevenue.com/bb/0e/81/ME18EFZ9_o.jpeg" height={100} width={100} />
+                            <Image alt="Tailwind CSS Navbar component" src="https://cdn-images.imagevenue.com/2a/43/92/ME18FB6H_o.jpeg" height={100} width={100} />
                         </div>
                     </div>
 

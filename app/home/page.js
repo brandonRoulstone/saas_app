@@ -58,7 +58,7 @@ const Landing_page = () => {
           </button>
         ) : (
           <button className='animate-pulse fixed right-4 bottom-0 mx-3 my-3 tooltip tooltip-left tooltip-info' data-tip="Open this" onClick={() => {handleOpen(true)}}>
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#3b82f6" class="size-14">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#3b82f6" className="size-14">
               <path strokeLinecap="round" strokeLineJoin="round" d="m15 11.25-3-3m0 0-3 3m3-3v7.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
             </svg>
           </button>
