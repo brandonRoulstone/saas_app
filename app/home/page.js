@@ -51,7 +51,7 @@ const Landing_page = () => {
 
 
       </div>
-        
+         
         { boxOpen === true ? (
           <ChatBoxUi />
         ) : (
