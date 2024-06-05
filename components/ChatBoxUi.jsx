@@ -11,7 +11,7 @@ const ChatBoxUi = () => {
   }
 
   return (
-    <div className="bg-zinc-50 h-[100vh] w-[50%] fixed right-16 bottom-20 rounded-md p-2 shadow-lg max-h-[17rem] overflow-y-scroll">
+    <div className="bg-zinc-50 h-[100vh] w-[50%] fixed right-16 bottom-20 rounded-md p-2 shadow-lg max-h-[17rem] overflow-y-scroll z-50">
       <nav className="flex justify-center fixed z-50 h-10 items-center bg-slate-100 w-[49%] rounded-full shadow-md">
         <div className="text-zinc-700">
           <p>Talk to us!</p>
