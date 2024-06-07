@@ -4,15 +4,18 @@ const TypeAnimationUi = () => {
   return (
     <TypeAnimation
       sequence={[
-        // Same substring at the start will only be typed out once, initially
+        'An App Made For Writers.',
+        1000, 
         'An App Made For Poets.',
-        1000, // wait 1s before replacing "Mice" with "Hamsters"
+        1000, 
+        'An App Made For Artists.',
+        1000, 
         'An App Made For Ideas.',
         1000,
         'An App Made For Personal blogs.',
         1000,
-        'An App Made For You!',
-        1000
+        'An App Designed For You!',
+        1000,
       ]}
       wrapper="span"
       speed={50}
