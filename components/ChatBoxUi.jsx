@@ -11,12 +11,11 @@ const ChatBoxUi = () => {
   }
 
   return (
-    <div className="bg-zinc-50 h-[100vh] w-[50%] fixed right-16 bottom-20 rounded-md p-2 shadow-lg max-h-[17rem] overflow-y-scroll z-50">
-      <nav className="flex justify-center fixed z-50 h-10 items-center bg-slate-100 w-[49%] rounded-full shadow-md">
-        <div className="text-zinc-700">
+    <div className="bg-zinc-50 h-[100vh] lg:w-[50%] w-[85%] fixed lg:right-16 bottom-20 rounded-md p-2 shadow-lg max-h-[17rem] overflow-y-scroll z-50">
+      <nav className="flex justify-center fixed z-50 h-10 items-center bg-slate-100 md:w-[49%] rounded-full shadow-md">
+        <div className="text-zinc-700 md:px-2 px-3">
           <p>Talk to us!</p>
         </div>
-
         <ul className="list-none flex px-10 gap-10">
           <li className="text-zinc-700 cursor-pointer tooltip tooltip-top active:scale-[75%] transition-all" data-tip="Info"><SvgIconInfo /></li>
           <li className="text-zinc-700 cursor-pointer tooltip tooltip-top active:scale-[75%] transition-all" data-tip="Settings"><SvgIconSettings /></li>
@@ -69,8 +68,8 @@ const ChatBoxUi = () => {
 
       </div>
         <div className="h-10 flex justify-start items-center mt-2 fixed w-[49%] border border-t-gray-400 border-l-0 border-r-0 border-b-0">
-          <input type="text" className="bg-white border px-5 w-[70%] rounded-full mt-2" placeholder="Send a message"/>
-          <button className="mt-2 mx-10 active:scale-[75%] transition-all"><SvgIconSend /></button>
+          <input type="text" className="bg-white border px-5 lg:w-[70%] rounded-full mt-2" placeholder="Send a message"/>
+          <button className="mt-2 lg:mx-10 mx-3 active:scale-[75%] transition-all"><SvgIconSend /></button>
         </div>
 
     </div>
