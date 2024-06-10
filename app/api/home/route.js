@@ -1,5 +1,6 @@
 import { NextResponse } from "next/server";
-import { AssemblyAI } from 'assemblyai'
+import { AssemblyAI } from 'assemblyai';
+import { selectUsers } from "@/libs/DbQueries";
 
 
 const client = new AssemblyAI({
@@ -19,6 +20,8 @@ const client = new AssemblyAI({
   
 
 export async function GET () {
-    // await run();
-    return NextResponse.json("Kudos it is running!");
+  // await run();
+  const users = await selectUsers();
+  console.log(users);
+  return NextResponse.json("Kudos it is running!");
 }
