@@ -1,10 +1,9 @@
 import NextAuth from 'next-auth/next';
 import Credentials from 'next-auth/providers/credentials';
 import { compare } from 'bcrypt';
-// import { pool } from '@/config/db';
 import { userLogin } from '@/libs/DbQueries';
-import { NextResponse } from 'next/server';
-import { pool } from '@/config/db';
+// import { NextResponse } from 'next/server';
+// import { pool } from '@/config/db';
 // import { TypeORMLegacyAdapter } from '@next-auth/typeorm-legacy-adapter';
 
 
