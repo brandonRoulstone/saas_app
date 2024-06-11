@@ -5,7 +5,7 @@ import { compare } from 'bcrypt';
 import { userLogin } from '@/libs/DbQueries';
 import { NextResponse } from 'next/server';
 import { pool } from '@/config/db';
-import { TypeORMLegacyAdapter } from '@next-auth/typeorm-legacy-adapter';
+// import { TypeORMLegacyAdapter } from '@next-auth/typeorm-legacy-adapter';
 
 
 export const authOptions = {
